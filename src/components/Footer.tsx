@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white">
+    <footer className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-700 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
@@ -28,29 +28,29 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-lg font-bold">TGANB</h3>
-                <p className="text-sm text-blue-200">Government of Telangana</p>
+                <p className="text-sm text-orange-200">Government of Telangana</p>
               </div>
             </div>
-            <p className="text-sm text-blue-100 leading-relaxed">
+            <p className="text-sm text-orange-100 leading-relaxed">
               Telangana Anti Narcotics Bureau is dedicated to combating drug trafficking and substance abuse through enforcement, prevention, and community engagement.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold border-b border-blue-600 pb-2">Quick Links</h4>
+            <h4 className="text-lg font-semibold border-b border-orange-600 pb-2">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/about-tganb" className="text-blue-100 hover:text-white transition-colors">About TGANB</a></li>
-              <li><a href="/vision-mission" className="text-blue-100 hover:text-white transition-colors">Vision & Mission</a></li>
-              <li><a href="/officers-directory" className="text-blue-100 hover:text-white transition-colors">Officers Directory</a></li>
-              <li><a href="/rehabilitation-centers" className="text-blue-100 hover:text-white transition-colors">Rehabilitation Centers</a></li>
-              <li><a href="/anti-drug-soldier-enrollment" className="text-blue-100 hover:text-white transition-colors">Anti-Drug Soldier</a></li>
+              <li><a href="/about-tganb" className="text-orange-100 hover:text-white transition-colors">About TGANB</a></li>
+              <li><a href="/vision-mission" className="text-orange-100 hover:text-white transition-colors">Vision & Mission</a></li>
+              <li><a href="/officers-directory" className="text-orange-100 hover:text-white transition-colors">Officers Directory</a></li>
+              <li><a href="/rehabilitation-centers" className="text-orange-100 hover:text-white transition-colors">Rehabilitation Centers</a></li>
+              <li><a href="/anti-drug-soldier-enrollment" className="text-orange-100 hover:text-white transition-colors">Anti-Drug Soldier</a></li>
             </ul>
           </div>
 
           {/* Contact Information */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold border-b border-blue-600 pb-2">Contact Information</h4>
+            <h4 className="text-lg font-semibold border-b border-orange-600 pb-2">Contact Information</h4>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-red-400" />
@@ -64,26 +64,26 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-blue-300" />
+                <Phone className="w-4 h-4 text-orange-300" />
                 <p 
-                  className="text-blue-100 cursor-pointer hover:text-white transition-colors"
+                  className="text-orange-100 cursor-pointer hover:text-white transition-colors"
                   onClick={() => handleCall('8712671111')}
                 >
                   Contact: 8712671111
                 </p>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-blue-300" />
+                <Mail className="w-4 h-4 text-orange-300" />
                 <p 
-                  className="text-blue-100 cursor-pointer hover:text-white transition-colors break-all"
+                  className="text-orange-100 cursor-pointer hover:text-white transition-colors break-all"
                   onClick={handleEmail}
                 >
                   tsnabho-hyd@tspolice.gov.in
                 </p>
               </div>
               <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-blue-300 mt-0.5" />
-                <p className="text-blue-100 text-xs leading-relaxed">
+                <MapPin className="w-4 h-4 text-orange-300 mt-0.5" />
+                <p className="text-orange-100 text-xs leading-relaxed">
                   Telangana Anti Narcotics Bureau<br />
                   Hyderabad, Telangana, India
                 </p>
@@ -93,19 +93,19 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold border-b border-blue-600 pb-2">Our Services</h4>
+            <h4 className="text-lg font-semibold border-b border-orange-600 pb-2">Our Services</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/mission-parivartana" className="text-blue-100 hover:text-white transition-colors">Mission Parivartana</a></li>
-              <li><a href="/operation-sankalp" className="text-blue-100 hover:text-white transition-colors">Operation Sankalp</a></li>
-              <li><a href="/education" className="text-blue-100 hover:text-white transition-colors">Drug Education</a></li>
-              <li><a href="/certificate-verification" className="text-blue-100 hover:text-white transition-colors">Certificate Verification</a></li>
-              <li><a href="/trainings" className="text-blue-100 hover:text-white transition-colors">Training Programs</a></li>
+              <li><a href="/mission-parivartana" className="text-orange-100 hover:text-white transition-colors">Mission Parivartana</a></li>
+              <li><a href="/operation-sankalp" className="text-orange-100 hover:text-white transition-colors">Operation Sankalp</a></li>
+              <li><a href="/education" className="text-orange-100 hover:text-white transition-colors">Drug Education</a></li>
+              <li><a href="/certificate-verification" className="text-orange-100 hover:text-white transition-colors">Certificate Verification</a></li>
+              <li><a href="/trainings" className="text-orange-100 hover:text-white transition-colors">Training Programs</a></li>
             </ul>
           </div>
         </div>
 
         {/* Social Media Links */}
-        <div className="border-t border-blue-600 mt-8 pt-8">
+        <div className="border-t border-orange-600 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="flex space-x-4">
               <button 
@@ -134,10 +134,10 @@ const Footer = () => {
               </button>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-sm text-blue-200">
+              <p className="text-sm text-orange-200">
                 © 2024 Telangana Anti Narcotics Bureau. All rights reserved.
               </p>
-              <p className="text-xs text-blue-300 mt-1">
+              <p className="text-xs text-orange-300 mt-1">
                 Government of Telangana
               </p>
             </div>

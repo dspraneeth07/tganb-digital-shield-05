@@ -104,8 +104,8 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-lg border-b border-green-600 sticky top-0 z-50 font-poppins">
-      {/* Top Header - Compact */}
-      <div className="bg-gradient-to-r from-blue-900 via-green-800 to-blue-700 text-white py-1 md:py-2">
+      {/* Top Header - Professional Gradient */}
+      <div className="bg-gradient-to-r from-slate-700 via-slate-600 to-blue-700 text-white py-1 md:py-2">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
@@ -185,8 +185,8 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main Navigation - Compact */}
-      <nav className="bg-gradient-to-r from-green-50 via-white to-green-50 py-1">
+      {/* Main Navigation - Bright White Background */}
+      <nav className="bg-white py-1">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Mobile menu button */}
@@ -243,7 +243,7 @@ const Header = () => {
               {/* T-RISING.AI Button - now redirects to /about-rising-ai */}
               <button 
                 onClick={() => handleNavigation('/about-rising-ai')}
-                className="text-xs font-medium transition-all duration-200 py-1 px-2 rounded whitespace-nowrap text-white bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 font-bold shadow-lg"
+                className="text-xs font-medium transition-all duration-200 py-1 px-2 rounded whitespace-nowrap text-white bg-gradient-to-r from-slate-600 to-emerald-600 hover:from-slate-700 hover:to-emerald-700 font-bold shadow-lg"
               >
                 T-RISING.AI
               </button>
@@ -283,7 +283,7 @@ const Header = () => {
                 {/* T-RISING.AI Mobile Button */}
                 <button 
                   onClick={() => { handleNavigation('/about-rising-ai'); setIsMenuOpen(false); }}
-                  className="w-full text-left py-2 px-4 text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-green-600"
+                  className="w-full text-left py-2 px-4 text-sm font-bold text-white bg-gradient-to-r from-slate-600 to-emerald-600"
                 >
                   T-RISING.AI
                 </button>
