@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Menu, X, Phone, ChevronDown, Mail, Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -102,9 +103,9 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg border-b border-blue-600 sticky top-0 z-50 font-poppins">
+    <header className="bg-white shadow-lg border-b border-green-600 sticky top-0 z-50 font-poppins">
       {/* Top Header - Compact */}
-      <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white py-1 md:py-2">
+      <div className="bg-gradient-to-r from-blue-900 via-green-800 to-blue-700 text-white py-1 md:py-2">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
@@ -124,7 +125,7 @@ const Header = () => {
             <h1 className="text-base md:text-xl font-bold font-poppins tracking-wide">
               TELANGANA ANTI NARCOTICS BUREAU (TGANB)
             </h1>
-            <p className="text-sm text-blue-200 hidden md:block">Government of Telangana</p>
+            <p className="text-sm text-green-200 hidden md:block">Government of Telangana</p>
           </div>
 
           {/* Desktop Contact Info */}
@@ -138,7 +139,7 @@ const Header = () => {
                 <span>1908</span>
               </div>
               <div 
-                className="flex items-center space-x-1 bg-blue-600 px-2 py-1 rounded-full text-xs font-medium cursor-pointer hover:bg-blue-700 transition-colors"
+                className="flex items-center space-x-1 bg-green-600 px-2 py-1 rounded-full text-xs font-medium cursor-pointer hover:bg-green-700 transition-colors"
                 onClick={() => handleCall('8712671111')}
               >
                 <Phone className="w-2 h-2" />
@@ -146,7 +147,7 @@ const Header = () => {
               </div>
             </div>
             <div 
-              className="flex items-center space-x-1 text-xs text-blue-200 cursor-pointer hover:text-white transition-colors"
+              className="flex items-center space-x-1 text-xs text-green-200 cursor-pointer hover:text-white transition-colors"
               onClick={handleEmail}
             >
               <Mail className="w-2 h-2" />
@@ -185,7 +186,7 @@ const Header = () => {
       </div>
 
       {/* Main Navigation - Compact */}
-      <nav className="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-1">
+      <nav className="bg-gradient-to-r from-green-50 via-white to-green-50 py-1">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Mobile menu button */}
@@ -205,8 +206,8 @@ const Header = () => {
                   <button 
                     className={`text-xs font-medium transition-all duration-200 py-1 px-2 rounded whitespace-nowrap flex items-center gap-1 ${
                       item.href === '/' 
-                        ? 'text-blue-600 bg-blue-50 border-b-2 border-blue-600 font-bold' 
-                        : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                        ? 'text-green-600 bg-green-50 border-b-2 border-green-600 font-bold' 
+                        : 'text-gray-700 hover:text-green-600 hover:bg-green-50'
                     }`}
                     onClick={() => handleNavigation(item.href)}
                     onMouseEnter={() => item.dropdown && setActiveDropdown(item.title)}
@@ -227,7 +228,7 @@ const Header = () => {
                           className={`w-full text-left py-2 px-4 text-sm font-medium transition-colors ${
                             dropdownItem.gradient 
                               ? `text-white bg-gradient-to-r ${dropdownItem.gradient} hover:opacity-90 mx-2 rounded-md`
-                              : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                              : 'text-gray-700 hover:bg-green-50 hover:text-green-600'
                           }`}
                           onClick={() => handleNavigation(dropdownItem.href)}
                         >
@@ -242,7 +243,7 @@ const Header = () => {
               {/* T-RISING.AI Button - now redirects to /about-rising-ai */}
               <button 
                 onClick={() => handleNavigation('/about-rising-ai')}
-                className="text-xs font-medium transition-all duration-200 py-1 px-2 rounded whitespace-nowrap text-white bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 font-bold shadow-lg"
+                className="text-xs font-medium transition-all duration-200 py-1 px-2 rounded whitespace-nowrap text-white bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 font-bold shadow-lg"
               >
                 T-RISING.AI
               </button>
@@ -256,8 +257,8 @@ const Header = () => {
                     <button 
                       className={`w-full text-left py-2 px-4 text-sm font-medium ${
                         item.href === '/' 
-                          ? 'text-blue-600 bg-blue-50 font-bold' 
-                          : 'text-gray-700 hover:bg-blue-50'
+                          ? 'text-green-600 bg-green-50 font-bold' 
+                          : 'text-gray-700 hover:bg-green-50'
                       }`}
                       onClick={() => handleNavigation(item.href)}
                     >
@@ -269,7 +270,7 @@ const Header = () => {
                         className={`w-full text-left py-2 px-8 text-sm ${
                           dropdownItem.gradient 
                             ? `text-white bg-gradient-to-r ${dropdownItem.gradient}`
-                            : 'text-gray-600 hover:bg-blue-50'
+                            : 'text-gray-600 hover:bg-green-50'
                         }`}
                         onClick={() => handleNavigation(dropdownItem.href)}
                       >
@@ -282,7 +283,7 @@ const Header = () => {
                 {/* T-RISING.AI Mobile Button */}
                 <button 
                   onClick={() => { handleNavigation('/about-rising-ai'); setIsMenuOpen(false); }}
-                  className="w-full text-left py-2 px-4 text-sm font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600"
+                  className="w-full text-left py-2 px-4 text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-green-600"
                 >
                   T-RISING.AI
                 </button>
@@ -299,7 +300,7 @@ const Header = () => {
                     </button>
                     <button 
                       onClick={() => handleCall('8712671111')}
-                      className="flex items-center space-x-1 bg-blue-600 px-2 py-1 rounded text-white text-xs"
+                      className="flex items-center space-x-1 bg-green-600 px-2 py-1 rounded text-white text-xs"
                     >
                       <Phone className="w-3 h-3" />
                       <span>8712671111</span>
@@ -307,7 +308,7 @@ const Header = () => {
                   </div>
                   <button 
                     onClick={handleEmail}
-                    className="flex items-center space-x-1 text-xs text-blue-600"
+                    className="flex items-center space-x-1 text-xs text-green-600"
                   >
                     <Mail className="w-3 h-3" />
                     <span>tsnabho-hyd@tspolice.gov.in</span>

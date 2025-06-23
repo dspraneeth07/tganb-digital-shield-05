@@ -12,7 +12,7 @@ const AboutTRisingAI = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 font-poppins text-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-green-800 to-blue-900 font-poppins text-white">
       <Header />
       
       {/* Hero Section */}
@@ -32,12 +32,12 @@ const AboutTRisingAI = () => {
               />
               <div>
                 <h1 className="text-5xl md:text-7xl font-bold mb-4">
-                  T-<span className="text-yellow-400">RISING</span>.AI
+                  T-<span className="text-green-400">RISING</span>.AI
                 </h1>
-                <p className="text-2xl md:text-3xl text-blue-200 mb-2">
+                <p className="text-2xl md:text-3xl text-green-200 mb-2">
                   Telangana's AI-Powered Platform
                 </p>
-                <p className="text-xl text-blue-300">
+                <p className="text-xl text-green-300">
                   for Drug Awareness, Prevention, and Recovery
                 </p>
               </div>
@@ -53,7 +53,7 @@ const AboutTRisingAI = () => {
           >
             <Card className="bg-white/10 backdrop-blur-md border-white/20">
               <CardContent className="p-8 text-center">
-                <h2 className="text-3xl font-bold mb-6 text-yellow-400">T-RISING.AI stands for:</h2>
+                <h2 className="text-3xl font-bold mb-6 text-green-400">T-RISING.AI stands for:</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-lg">
                   <div className="flex items-center space-x-3">
                     <Heart className="w-6 h-6 text-red-400" />
@@ -72,11 +72,11 @@ const AboutTRisingAI = () => {
                     <span><strong>I</strong>ntelligence</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Lightbulb className="w-6 h-6 text-yellow-400" />
+                    <Lightbulb className="w-6 h-6 text-green-400" />
                     <span><strong>N</strong>urturing</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-gradient-to-r from-purple-400 to-pink-500 rounded flex items-center justify-center text-xs font-bold">🌅</div>
+                    <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-blue-500 rounded flex items-center justify-center text-xs font-bold">🌅</div>
                     <span><strong>G</strong>rowth</span>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ const AboutTRisingAI = () => {
             <h2 className="text-5xl font-bold mb-8 text-white">
               🤖 The 3 Pillars of T-RISING.AI
             </h2>
-            <p className="text-xl text-blue-200 max-w-4xl mx-auto">
+            <p className="text-xl text-green-200 max-w-4xl mx-auto">
               T-RISING.AI comprises three specialized AI models, each uniquely developed to address a specific stage of the anti-drug journey: Awareness, Prevention, and Recovery.
             </p>
           </motion.div>
@@ -147,10 +147,10 @@ const AboutTRisingAI = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <Card className="bg-gradient-to-br from-blue-800/30 to-blue-900/30 backdrop-blur-md border-blue-600/30 h-full">
+              <Card className="bg-gradient-to-br from-green-800/30 to-green-900/30 backdrop-blur-md border-green-600/30 h-full">
                 <CardContent className="p-8">
                   <div className="text-center mb-6">
-                    <div className="w-20 h-20 bg-gradient-to-r from-blue-700 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-20 h-20 bg-gradient-to-r from-green-700 to-green-800 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-3xl">🤝</span>
                     </div>
                     <h3 className="text-3xl font-bold text-white mb-2">Sahay.AI</h3>
@@ -175,7 +175,7 @@ const AboutTRisingAI = () => {
 
                   <Button 
                     onClick={() => navigate('/sahay-ai-chat')}
-                    className="w-full bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900"
+                    className="w-full bg-gradient-to-r from-green-700 to-green-800 hover:from-green-800 hover:to-green-900"
                   >
                     Try Sahay.AI
                   </Button>
@@ -230,10 +230,10 @@ const AboutTRisingAI = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Card className="bg-gradient-to-br from-blue-800/30 to-blue-900/30 backdrop-blur-md border-blue-600/30 h-full">
+              <Card className="bg-gradient-to-br from-green-800/30 to-blue-800/30 backdrop-blur-md border-green-600/30 h-full">
                 <CardContent className="p-8">
                   <div className="text-center mb-6">
-                    <div className="w-20 h-20 bg-gradient-to-r from-blue-700 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-20 h-20 bg-gradient-to-r from-green-700 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-4">
                       <span className="text-3xl">🌅</span>
                     </div>
                     <h3 className="text-3xl font-bold text-white mb-2">Uday.AI</h3>
@@ -257,7 +257,7 @@ const AboutTRisingAI = () => {
 
                   <Button 
                     onClick={() => navigate('/uday-ai-planner')}
-                    className="w-full bg-gradient-to-r from-blue-700 to-blue-800 hover:from-blue-800 hover:to-blue-900"
+                    className="w-full bg-gradient-to-r from-green-700 to-blue-700 hover:from-green-800 hover:to-blue-800"
                   >
                     Try Uday.AI
                   </Button>
@@ -329,7 +329,7 @@ const AboutTRisingAI = () => {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
-            <Card className="bg-gradient-to-r from-blue-600/20 to-blue-600/20 backdrop-blur-md border-blue-400/30">
+            <Card className="bg-gradient-to-r from-green-600/20 to-blue-600/20 backdrop-blur-md border-green-400/30">
               <CardContent className="p-12">
                 <h2 className="text-5xl font-bold mb-8 flex items-center justify-center text-white">
                   <span className="mr-4">🌟</span> Join the Mission
@@ -351,7 +351,7 @@ const AboutTRisingAI = () => {
                 <div className="flex flex-wrap justify-center gap-4">
                   <Button 
                     onClick={() => navigate('/about-rising-ai')}
-                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 px-8 py-4 text-lg"
+                    className="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 px-8 py-4 text-lg"
                   >
                     Explore All AI Tools
                   </Button>
