@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu, X, Phone, ChevronDown, Mail, Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -27,7 +26,7 @@ const Header = () => {
         { title: 'TGANB Structure', href: '/tganb-structure' },
         { title: 'About T-RISING.AI', href: '/about-t-rising-ai' },
         { title: 'About Sahay AI', href: '/about-sahay-ai', gradient: 'from-green-500 to-emerald-500' },
-        { title: 'About Shield AI', href: '/about-shield-ai', gradient: 'from-blue-500 to-indigo-500' },
+        { title: 'About Shield AI', href: '/about-shield-ai', gradient: 'from-slate-500 to-slate-600' },
         { title: 'About Uday AI', href: '/about-uday-ai', gradient: 'from-purple-500 to-pink-500' }
       ]
     },
@@ -104,8 +103,8 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-lg border-b border-green-600 sticky top-0 z-50 font-poppins">
-      {/* Top Header - Professional Gradient */}
-      <div className="bg-gradient-to-r from-slate-700 via-slate-600 to-blue-700 text-white py-1 md:py-2">
+      {/* Top Header - Dark Professional Gradient */}
+      <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white py-1 md:py-2">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
@@ -170,7 +169,7 @@ const Header = () => {
               </button>
               <button 
                 onClick={() => handleSocialMedia('https://www.facebook.com/telanganaantinarcoticsbureau/')}
-                className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                className="w-5 h-5 bg-slate-600 rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors"
               >
                 <Facebook className="w-2 h-2" />
               </button>
@@ -321,7 +320,7 @@ const Header = () => {
                       <Twitter className="w-5 h-5 text-gray-800" />
                     </button>
                     <button onClick={() => handleSocialMedia('https://www.facebook.com/telanganaantinarcoticsbureau/')}>
-                      <Facebook className="w-5 h-5 text-blue-600" />
+                      <Facebook className="w-5 h-5 text-slate-600" />
                     </button>
                     <button onClick={() => handleSocialMedia('https://www.youtube.com/@TG_ANB')}>
                       <Youtube className="w-5 h-5 text-red-600" />
